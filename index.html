@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Connexion MC Malvabundos</title>
+  <style>
+    body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #111; color: #fff; }
+    .login-box { background: #222; padding: 40px; border-radius: 10px; text-align: center; }
+    input { padding: 10px; margin: 10px 0; width: 100%; border-radius: 5px; border: none; }
+    button { padding: 10px 20px; border: none; border-radius: 5px; background: #f39c12; color: #fff; cursor: pointer; }
+    button:hover { background: #e67e22; }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Connexion MC Malvabundos</h2>
+    <input type="text" id="username" placeholder="Nom d'utilisateur">
+    <input type="password" id="password" placeholder="Mot de passe">
+    <button onclick="login()">Se connecter</button>
+  </div>
+
+  <script>
+    function login() {
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+
+      // Exemple simple : remplacer par vos identifiants
+      if(user === "Malvabundos666" && pass === "MFFM!666") {
+        window.location.href = "https://docs.google.com/spreadsheets/d/1Ku5sPur_UlhrhkglUUVqoE0O5qSnlZrm4ztlW2AZMN4/edit?usp=sharing";
+      } else {
+        alert("Identifiant ou mot de passe incorrect !");
+      }
+    }
+  </script>
+</body>
+</html>
